@@ -128,12 +128,21 @@ A: Using the CLI,
 
 Q: What is JNLP and why is it used in Jenkins ?
 
-A: In Jenkins, JNLP is used to allow agents (also known as "slave nodes") to be launched and managed remotely by the Jenkins master instance. This allows Jenkins to distribute build tasks to multiple agents, providing scalability and improving performance.
+A: Java Network Launch Protocol (JNLP). In Jenkins, JNLP is used to allow agents (also known as "slave nodes") to be launched and managed remotely by the Jenkins master instance. This allows Jenkins to distribute build tasks to multiple agents, providing scalability and improving performance.
 
    When a Jenkins agent is launched using JNLP, it connects to the Jenkins master and receives build tasks, which it then executes. The results of the build are then sent back to the master and displayed in the Jenkins user interface.
 
 Q: What are some of the common plugins that you use in Jenkins ?
 
 A: Be prepared for answer, you need to have atleast 3-4 on top of your head, so that interview feels you use jenkins on a day-to-day basis.
-
-
+   Jenkins plugins are the main components that allow you to customize a Jenkins environment in a way that meets the unique requirements of a company or individual user. More than 1,800 plugins are available to install on Jenkins to integrate different build tools, analytic tools, and other cloud providers.
+1. Git Plugin - It allows you to integrate Jenkins with GitHub and transfer GitHub repository data to the Jenkins machine easily.
+2. Kubernetes Plugin - It allows you to run all the dynamic agents in a Kubernetes cluster. This plugin creates a Kubernetes Pod for each agent getting started and stopped once the build is finished.
+3. Jira Plugin - The Jira plugin integrates Jenkins with Atlassian Jira Software. You can work with both the Cloud and Server versions with this Jenkins plugin. But you need to use a Jira service account instead of a Jira personal account to install this plugin. 
+4. Docker Plugin - The Jenkins cloud plugin for Docker is the most effective solution for DevOps engineers to integrate Jenkins with Docker. It allows you to dynamically provision the Docker containers and run those as Jenkins agent nodes.
+5. Maven Integration Plugin - Jenkins has native Maven support, although you may need deeper integration if you use it. This Jenkins plugin is available independently and offers greater Jenkins integration for Apache Maven projects.
+6. Amazon EC2 Plugin - Amazon EC2 plugin lets Jenkins start up new EC2 or Eucalyptus agents on demand and shut them down when they are no longer needed. 
+If your build cluster becomes overcrowded, this plugin will launch EC2 instances and configure those as Jenkins agents. Unused EC2 instances will be stopped when the load decreases. 
+7. SonarQuobe - SonarQuobe is an open-source tool used for continuous code quality inspection. The Jenkins monitoring plugin allows you to integrate SonarQube into Jenkins so that you can easily analyze a code while running a Jenkins job that comes with SonarQuobe execution. Developers can use this plugin to identify vulnerabilities, bugs, and the possibility of duplication while building codes on the Jenkins automation server.
+8. Metrics Plugin
+Metrics is a Java library that offers a toolkit to measure the performance metrics of the critical components in your production environment. The Metrics Jenkins plugin exhibits the same API of Metrics as all the other Jenkins plugins.
